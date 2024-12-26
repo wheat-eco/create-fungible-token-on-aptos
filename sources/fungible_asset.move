@@ -11,7 +11,7 @@ module aptos_asset::fungible_asset{
     /// Only fungible asset metadata owner can make changes.
     const ENOT_OWNER: u64 = 1;
 
-    const ASSET_SYMBOL: vector<u8> = b"SWHIT";
+    const ASSET_SYMBOL: vector<u8> = b"META";
 
     #[resource_group_member(group = aptos_framework::object::ObjectGroup)]
     /// Hold refs to control the minting, transfer and burning of fungible assets.
