@@ -11,7 +11,7 @@ module aptos_asset::fungible_asset{
     /// Only fungible asset metadata owner can make changes.
     const ENOT_OWNER: u64 = 1;
 
-    const ASSET_SYMBOL: vector<u8> = b"META";
+    const ASSET_SYMBOL: vector<u8> = b"SWHIT";
 
     #[resource_group_member(group = aptos_framework::object::ObjectGroup)]
     /// Hold refs to control the minting, transfer and burning of fungible assets.
@@ -29,7 +29,7 @@ module aptos_asset::fungible_asset{
             constructor_ref,
             option::none(),
             utf8(b"WheatChain"), /* name */
-            utf8(SWHIT), /* symbol */
+            utf8(ASSET_SYMBOL), /* symbol */
             8, /* decimals */
             utf8(b"https://raw.githubusercontent.com/wheat-eco/wheatsol-asset/refs/heads/main/wheat_sol_256x256.png"), /* icon */
             utf8(b"http://wheatchain.xyz"), /* project */
